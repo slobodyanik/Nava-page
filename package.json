@@ -1,0 +1,25 @@
+{
+	"name": "web-project",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"jquery": "3.2.1"
+	},
+	"devDependencies": {
+		"eslint": "4.3.0",
+		"stylelint": "8.0.0",
+		"eslint-config-recommended": "1.5.0",
+		"browser-sync": "2.18.13",
+		"stylelint-config-standard": "17.0.0"
+	},
+	"scripts": {
+		"start": "browser-sync start --server \"src\" --files \"src\" --open \"external\" --no-notify --no-ghost-mode",
+		"stylelint": "stylelint \"src/**/*.css\"",
+		"eslint": "eslint --ext .js src/",
+		"lint": "npm run stylelint & npm run eslint"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
